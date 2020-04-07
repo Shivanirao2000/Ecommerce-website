@@ -1,0 +1,46 @@
+<body class="login">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<link rel="stylesheet" href="styles.css" />
+	<div>
+		<% if(error&&error.length>0){ %>
+		<div class="alert alert-danger" role="alert">
+			<%= error %>
+		</div>
+		<% } %>
+		<% if(success&&success.length>0){ %>
+		<div class="alert alert-success" role="alert">
+			<%= success %>
+		</div>
+		<% } %>
+	</div>
+	
+	
+	<div class="login-box">
+	<h1>
+		Sign Up
+	</h1>
+	</div>
+	<div class="login-box">
+	<form action="/register" method="post">
+	
+		<div class="textbox">	
+			<i class="fas fa-user"></i>
+			<input type="text" name="username" placeholder="Username">
+		</div>
+		<div class="textbox">
+			<i class="fas fa-lock"></i>
+			<input type="password" name="password" placeholder="Password">
+		</div>
+	
+		<input class="btn" type="submit" value="Sign Up!">
+	</form>
+	</div>
+	<div class="login-box">
+		
+		<h4>Already have an account?</h4>
+	</div>  
+	<a class="login-box" href="/login">Login</a>
+	
+	
+	</body>

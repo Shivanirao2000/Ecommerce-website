@@ -28,8 +28,9 @@ function ready() {
 
 var stripeHandler = StripeCheckout.configure({
     key: stripePublicKey,
-    locale: 'en',
+    locale: 'auto',
     token: function(token) {
+        // console.log(token);
         var items = []
         var cartItemContainer = document.getElementsByClassName('cart-items')[0]
         var cartRows = cartItemContainer.getElementsByClassName('cart-row')
@@ -69,13 +70,22 @@ var stripeHandler = StripeCheckout.configure({
     }
 })
 
+
+
 function purchaseClicked() {
     var priceElement = document.getElementsByClassName('cart-total-price')[0]
-    var price = parseFloat(priceElement.innerText.replace('$', '')) * 100
+    var price = parseFloat(priceElement.innerText.replace('INR ', '')) * 100
     stripeHandler.open({
-        amount: price
-    })
-}
+       
+            name: 'Stripe.com',
+            description: '1 widget',
+            amount: price,
+            currency: "INR"
+          });
+          e.preventDefault();
+        }
+    
+
 
 function removeCartItem(event) {
     var buttonClicked = event.target
@@ -138,10 +148,10 @@ function updateCartTotal() {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var price = parseFloat(priceElement.innerText.replace('INR', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'INR ' + total
 }

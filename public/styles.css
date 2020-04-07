@@ -1,6 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @font-face {
     font-family: "Booter - Zero Zero";
     src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
@@ -19,6 +20,19 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    background: #D0D0D0;
+}
+
+.thumbnail img{
+	width: 100%;
+}
+
+.thumbnail{
+	padding:0;
+}
+
+.thumbnail .caption-full{
+	padding: 9px;
 }
 
 .nav ul {
@@ -59,7 +73,70 @@ html, body {
     padding-bottom: 30px;
 }
 
-.band-name {
+.login{   
+  
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: black;
+    background-blend-mode: multiply;
+    background-size: cover;
+  
+} 
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-box h1{
+    float: left;
+    font-size: 70px;
+    border-bottom: 6px solid #777;
+    margin-bottom: 50px;
+    padding: 13px 0
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid #777;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80px;
+    float: left;
+    margin: 0 10px;
+}
+
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #777;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    margin: 12px 0;
+}
+.brand-name {
     text-align: center;
     margin: 0;
     font-size: 4em;
@@ -97,6 +174,9 @@ html, body {
     border-radius: 50%;
 }
 
+.about-text{
+    color: #202020;
+}
 .main-footer {
     background-color: #56CCF2;
     color: white;
@@ -165,6 +245,9 @@ html, body {
     font-weight: bold;
 }
 
+.btn-purchase{
+    align-items: center;
+}
 .btn-primary:hover {
     background-color: #2D9CDB;
 }
@@ -204,6 +287,10 @@ html, body {
 
 .shop-item {
     margin: 30px;
+}
+
+.foot{
+    column-gap: 40px;
 }
 
 .shop-item-title {

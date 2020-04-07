@@ -9,9 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "stripe": "^6.18.1"
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "stripe": "^6.36.0"
   },
   "devDependencies": {
     "dotenv": "^6.2.0"

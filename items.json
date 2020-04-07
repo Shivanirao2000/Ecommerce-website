@@ -1,42 +1,106 @@
 {
-  "music": [
+  "clothing": [
     {
       "id": 1,
-      "name": "Album 1",
-      "price": 1299,
-      "imgName": "Album 1.png"
+      "name": "Black T",
+      "price": 12990,
+      "imgName": "photo-1.png"
     },
     {
       "id": 2,
-      "name": "Album 2",
-      "price": 1499,
-      "imgName": "Album 2.png"
+      "name": "Yellow T",
+      "price": 14990,
+      "imgName": "photo-2.png"
     },
     {
       "id": 3,
-      "name": "Album 3",
-      "price": 999,
-      "imgName": "Album 3.png"
+      "name": "Sweater",
+      "price": 19990,
+      "imgName": "photo-3.png"
     },
     {
       "id": 4,
-      "name": "Album 4",
-      "price": 1999,
-      "imgName": "Album 4.png"
+      "name": "Jacket",
+      "price": 18990,
+      "imgName": "photo-4.png"
     }
   ],
-  "merch": [
-    {
-      "id": 5,
-      "name": "T-Shirt",
-      "price": 1999,
-      "imgName": "Shirt.png"
-    },
+  "footwear": [
+    
     {
       "id": 6,
-      "name": "Coffee Cup",
-      "price": 699,
-      "imgName": "Cofee.png"
+      "name": "White shoe",
+      "price": 16990,
+      "imgName": "f1.png"
+    },
+    {
+      "id": 7,
+      "name": "Colorfull shoe",
+      "price": 15990,
+      "imgName": "f2.png"
+    },
+    {
+      "id": 8,
+      "name": "Sandals",
+      "price": 17990,
+      "imgName": "f3.png"
+    },
+    {
+      "id": 9,
+      "name": "Heals",
+      "price": 18990,
+      "imgName": "f4.png"
+    },
+    {
+      "id": 10,
+      "name": "Sports Shoe",
+      "price": 16990,
+      "imgName": "f5.png"
+    },
+    {
+      "id": 11,
+      "name": "Sneakers",
+      "price": 20990,
+      "imgName": "f6.png"
+    }
+  ],
+  "accessories": [
+    
+    {
+      "id": 12,
+      "name": "Sunglass",
+      "price": 14990,
+      "imgName": "A1.png"
+    },
+    {
+      "id": 13,
+      "name": "Purse",
+      "price": 13990,
+      "imgName": "A2.png"
+    },
+    {
+      "id": 14,
+      "name": "Fancy Watch",
+      "price": 15990,
+      "imgName": "A3.png"
+    },
+    {
+      "id": 15,
+      "name": "Men's Watch",
+      "price": 12990,
+      "imgName": "A4.png"
+    },
+    {
+      "id": 16,
+      "name": "Pendent",
+      "price": 18990,
+      "imgName": "A5.png"
+    },
+    {
+      "id": 17,
+      "name": "Ring",
+      "price": 16990,
+      "imgName": "A6.png"
     }
   ]
 }
