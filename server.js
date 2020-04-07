@@ -1,14 +1,16 @@
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   require('dotenv').config()
+// }
+require('dotenv').config()
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY
-
+// const stripeSecretKey = sk_test_oKCaLNqTDAS3tkcE8cC0jPDy00FlPcvZqd
+// const stripePublicKey = pk_test_ZN01sAFhqxyOLZPxxVPbNuwf00KzG1X6yq
 const express = require('express')
 const app = express()
 const fs = require('fs')
-const stripe = require('stripe')(stripePublicKey)
+const stripe = require('stripe')(stripeSecretKey)
 var bodyParser=require("body-parser");
 var mongoose=require("mongoose");
 var passport=require("passport");
