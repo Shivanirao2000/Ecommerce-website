@@ -11,12 +11,24 @@
                 <ul>
                     <li><a href="/">HOME</a></li>
                     <li><a href="/store">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    
                 </ul>
+                
+                    <ul class="navbar-nav navbar-right">
+                        <% if(!currentUser){ %>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Sign up</a></li>
+                        <% }else{ %>
+                        <li><a href="#">Signed in as <%= currentUser.username %></a></li>
+                        <li><a href="/logout">Logout</a></li>
+                        <% } %>
+                    </ul>
+                
             </nav>
             <h1 class="brand-name band-name-large">Minx Fashion</h1>
         </header>
-
+        
         <section class="content-section container">
             <h2 class="section-header">ABOUT</h2>
             <img class="about-band-image" src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">

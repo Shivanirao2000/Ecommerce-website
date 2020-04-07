@@ -78,6 +78,9 @@ app.get('/store', isLoggedIn, function(req, res) {
   })
 })
 
+app.get("/about", function(req,res){
+	res.render("about.ejs");
+});
 
 app.get("/register", function(req,res){
 	res.render("register.ejs");
